@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SZY创新工作室成员介绍</title>
+    <meta name="description" content="SZY创新工作室成员介绍">
+    <meta property="og:url" content="https://studio.szyd.fun">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SZY创新工作室">
+    <meta property="og:description" content="一个由小学生和初中生创建的科技工作室，致力于用代码改变互联网">
+    <meta property="og:image" content="https://cdn.szyd.fun/szystudio/favicon.png">
+    <meta property="og:image:width" content="128">
+    <meta property="og:image:height" content="128">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://cdn.szyd.fun/szystudio/favicon.png" type="image/png">
+    <style>
+        :root {
+            --primary-color: #6f42c1;
+            --secondary-color: #20c997;
+            --accent-color: #fd7e14;
+            --light-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://cdn.szyd.fun/szystudio/background.webp');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            z-index: -1;
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 12px 0;
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--primary-color);
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary-color);
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+        
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .member-card {
+            text-align: center;
+            padding: 20px;
+            height: 100%;
+        }
+        
+        .member-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 4px solid var(--secondary-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            border-radius: 50px;
+            padding: 10px 25px;
+        }
+        
+        .btn-primary:hover {
+            background-color: #5a32a3;
+            border-color: #5a32a3;
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+            border-radius: 50px;
+            padding: 10px 25px;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .filter-buttons {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .filter-btn {
+            border-radius: 20px;
+            padding: 8px 20px;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: var(--primary-color);
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: var(--accent-color);
+        }
+        
+        .back-to-home {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .role-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://cdn.szyd.fun/szystudio/favicon.png" alt="logo">
+                <span class="fw-bold">SZY创新工作室</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">我们的服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">我们的项目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="member.html">工作室成员</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">工作室简介</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="back-to-home">
+            <a href="index.html" class="btn btn-outline-primary">
+                <i class="fas fa-arrow-left me-2"></i>返回主页
+            </a>
+        </div>
+
+        <h1 class="section-title">工作室成员</h1>
+        
+        <div class="filter-buttons">
+            <button class="btn filter-btn btn-outline-primary active" data-filter="all">全部成员</button>
+            <button class="btn filter-btn btn-outline-primary" data-filter="founder">创始人</button>
+            <button class="btn filter-btn btn-outline-primary" data-filter="management">管理团队</button>
+            <button class="btn filter-btn btn-outline-primary" data-filter="developer">开发团队</button>
+            <button class="btn filter-btn btn-outline-primary" data-filter="designer">设计团队</button>
+        </div>
+
+        <div class="row" id="member-container">
+            <div class="col-lg-4 col-md-6 mb-4 fade-in" data-category="founder management">
+                <div class="card member-card">
+                    <img src="https://cdn.szyd.fun/shizhongyan/68afa7da36198.jpg" alt="ShiZhongyan" class="member-img">
+                    <span class="role-badge">创始人</span>
+                    <h3>ShiZhongyan🍭</h3>
+                    <p class="text-muted">工作室创始人 & 全栈开发</p>
+                    <p>热爱编程和技术创新，负责工作室整体规划和项目开发。</p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.szyd.fun" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
+                        <a href="mailto:shizhongyan@szyd.fun" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4 fade-in" data-category="founder">
+                <div class="card member-card">
+                    <img src="https://cdn.szyd.fun/shizhongyan/68afa85d55b68.jpg" alt="1424cc" class="member-img">
+                    <span class="role-badge">发起人</span>
+                    <h3>1424cc</h3>
+                    <p class="text-muted">工作室发起人 & 后端开发</p>
+                    <p>擅长服务器管理和后端开发，确保服务稳定运行。</p>
+                    <div class="social-links mt-3">
+                        <a href="mailto:cuichen@szyd.fun" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4 fade-in" data-category="management">
+                <div class="card member-card">
+                    <img src="https://cdn.szyd.fun/shizhongyan/68afa85de355a.jpg" alt="ZHANGZHAORUI" class="member-img">
+                    <span class="role-badge">MCN负责人</span>
+                    <h3>ZHANGZHAORUI</h3>
+                    <p class="text-muted">MCN负责人 & 社区管理</p>
+                    <p>负责社区运营和内容创作，活跃社区氛围。</p>
+                    <div class="social-links mt-3">
+                        <a href="https://new.zzrbk.xyz" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
+                        <a href="mailto:beibing@szyd.fun" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4 fade-in" data-category="management">
+                <div class="card member-card">
+                    <img src="https://cdn.szyd.fun/shizhongyan/68afa85daabba.jpg" alt="@!x0" class="member-img">
+                    <span class="role-badge">工作室管理</span>
+                    <h3>@!x0</h3>
+                    <p class="text-muted">工作室管理 & 系统运维</p>
+                    <p>负责服务器维护和系统安全，保障服务稳定。</p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.szyd.fun" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
+                        <a href="mailto:ctrlflow@szyd.fun" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4 fade-in" data-category="developer">
+                <div class="card member-card">
+                    <img src="https://cdn.szyd.fun/shizhongyan/68afa85daabba.jpg" alt="TechWizard" class="member-img">
+                    <span class="role-badge">前端开发</span>
+                    <h3>TechWizard</h3>
+                    <p class="text-muted">前端开发工程师</p>
+                    <p>负责网站和用户界面的设计与实现，创造流畅的用户体验。</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4 fade-in" data-category="designer">
+                <div class="card member-card">
+                    <img src="https://cdn.szyd.fun/shizhongyan/68afa85d55b68.jpg" alt="DesignMaster" class="member-img">
+                    <span class="role-badge">UI设计师</span>
+                    <h3>DesignMaster</h3>
+                    <p class="text-muted">UI/UX设计师</p>
+                    <p>负责产品界面设计和用户体验优化，让产品既美观又易用。</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4 fade-in" data-category="developer">
+                <div class="card member-card">
+                    <img src="https://cdn.szyd.fun/shizhongyan/68afa85de355a.jpg" alt="CodeNinja" class="member-img">
+                    <span class="role-badge">后端开发</span>
+                    <h3>CodeNinja</h3>
+                    <p class="text-muted">后端开发工程师</p>
+                    <p>负责服务器端逻辑和API开发，确保系统高效稳定运行。</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4 fade-in" data-category="developer">
+                <div class="card member-card">
+                    <img src="https://cdn.szyd.fun/shizhongyan/68afa7da36198.jpg" alt="DataGeek" class="member-img">
+                    <span class="role-badge">数据分析师</span>
+                    <h3>DataGeek</h3>
+                    <p class="text-muted">数据分析师</p>
+                    <p>负责数据分析和可视化，为产品决策提供数据支持。</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-icon"><i class="fas fa-chart-line"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-database"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4 fade-in" data-category="designer">
+                <div class="card member-card">
+                    <img src="https://cdn.szyd.fun/shizhongyan/68afa85daabba.jpg" alt="PixelArtist" class="member-img">
+                    <span class="role-badge">视觉设计师</span>
+                    <h3>PixelArtist</h3>
+                    <p class="text-muted">视觉设计师</p>
+                    <p>负责图标、插画和动效设计，为产品增添视觉魅力。</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-icon"><i class="fas fa-paint-brush"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-palette"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOptions = {
+                threshold: 0.2,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const fadeInObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, fadeInOptions);
+            
+            fadeElements.forEach(element => {
+                fadeInObserver.observe(element);
+            });
+            
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const members = document.querySelectorAll('.col-lg-4');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    const filter = button.getAttribute('data-filter');
+                    members.forEach(member => {
+                        if (filter === 'all') {
+                            member.style.display = 'block';
+                        } else {
+                            const categories = member.getAttribute('data-category').split(' ');
+                            if (categories.includes(filter)) {
+                                member.style.display = 'block';
+                            } else {
+                                member.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === 'member.html') {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
