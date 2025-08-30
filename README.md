@@ -56,12 +56,3 @@
 ---
 
 请注意：尊重开源，合法使用。共同维护一个健康、积极的技术交流环境。
-
-```
-
-### 使用说明：
-
-1.  **替换占位符信息：** 请务必将文件中 `your-username`, `your-email@example.com`, `https://www.your-studio-site.com` 等占位符替换为您工作室的真实信息。
-2.  **技术栈和脚本：** 文件中的技术栈（如后端）和 npm 脚本（如 `npm run dev`）是常见示例。您需要根据项目的**实际技术选型**和 `package.json` 中的脚本命令进行修改。
-3.  **中英文切换：** 我在开头添加了中英文切换的链接，如果您有英文版 README 的计划，可以创建 `README_EN.md` 文件。
-4.  **LICENSE 文件：** 请确保项目根目录下存在一个名为 `LICENSE` 的文件，其内容为完整的 Apache 2.0 许可证文本。您可以从 [Apache 官网](https://www.apache.org/licenses/LICENSE-2.0.txt) 复制。
