@@ -1,6 +1,6 @@
 SZY Innovation Studio Website
 
-中文 | English
+[中文](README.md) | [English](README_EN.md)
 
 This is the official website source code for SZY Innovation Studio. The website aims to showcase the studio's projects, members, and innovative culture, providing a window to the outside world for the team.
 
