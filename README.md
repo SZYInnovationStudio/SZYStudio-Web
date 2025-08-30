@@ -10,12 +10,7 @@
 
 这个项目基于以下技术构建：
 
-*   **前端:** HTML5, CSS3, JavaScript (ES6+)
-*   **后端:** (，例如: Node.js + Express / Python + Flask / 纯静态等)
-*   **构建工具:** (例如: Webpack / Vite / Gulp)
-*   **其他:** (例如: Sass, Bootstrap, Three.js 等)
-
-## ✨ 功能特性
+*   **前端:** HTML5, CSS3, JavaScript
 
 *   **响应式设计:** 完美适配桌面、平板和移动设备。
 *   **项目展示:** 动态展示工作室的各类创新项目。
