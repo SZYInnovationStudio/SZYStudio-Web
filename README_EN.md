@@ -44,8 +44,8 @@ We welcome contributions of all kinds! If you are interested in contributing to 
 
 If you have any questions or suggestions, please contact us via:
 
-· Email: zhangzhaorui@szyd.fun
-· Official Website: https://studio.szyd.fun/
+· Email: zhangzhaorui@szystudio.cn
+· Official Website: https://www.szystudio.cn/
 · Document Maintainer: Zhang Zhaorui
 
 ---
