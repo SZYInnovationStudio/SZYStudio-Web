@@ -45,8 +45,8 @@
 
 如果您有任何问题或建议，请通过以下方式联系我们：
 
-· 邮箱: zhangzhaorui@szyd.fun
-· 官网: https://studio.szyd.fun/
+· 邮箱: zhangzhaorui@szystudio.cn
+· 官网: https://www.szystudio.cn/
 * 本文档维护人：张钊睿
 ---
 
