@@ -1,54 +1,70 @@
-# SZYStudio-Web
+# SZY Innovation Studio - Website
 
-# SZY Innovation Studio Website
+SZY创新工作室的官方网站。
 
-[中文](README.md) | [English](README_EN.md)
+在线地址：[https://www.szystudio.cn](https://www.szystudio.cn)
 
-这是 SZY 创新工作室的官方网站源代码。网站旨在展示工作室的项目、成员以及创新文化，并为团队提供一个对外的窗口。
+## 技术栈
 
-## 🚀 技术栈
+- **框架**: Vue 3 (Composition API + `<script setup>`)
+- **构建**: Vite 5
+- **样式**: Tailwind CSS 3
+- **路由**: Vue Router 4 (Hash 模式)
+- **国际化**: vue-i18n 9 (中/英双语)
+- **状态**: Pinia 2
+- **动画**: CSS Transition + IntersectionObserver
+- **SEO**: @unhead/vue
 
-这个项目基于以下技术构建：
+## 功能
 
-*   **前端:** HTML5, CSS3, JavaScript
+- 全站中英文双语切换，URL 路由联动 (`/` 与 `/en`)
+- 毛玻璃设计系统，适配亮色背景
+- 响应式布局，覆盖手机 / 平板 / 桌面端
+- 滚动淡入动画，基于 IntersectionObserver 实现
+- 在线申请加入工作室，含验证码和管理后台
+- 成员展示页，手风琴展开查看详细信息
+- 服务展示
+- 项目列表
+- 数字滚动计数器
+- 终端风格 Hero 区块
 
-*   **响应式设计:** 完美适配桌面、平板和移动设备。
-*   **项目展示:** 动态展示工作室的各类创新项目。
-*   **成员介绍:** 介绍团队核心成员。
-*   **联系我们:** 提供便捷的联系方式表单。
+## 项目结构
 
-📄 开源许可证
+```
+src/
+├── assets/          # 全局样式
+├── components/
+│   ├── layout/      # AppHeader, AppFooter, AppDrawer, SideBar
+│   ├── specific/    # BentoGrid, CounterAnimation, MemberAccordion, TerminalBlock
+│   └── ui/          # GlassCard, FluidButton, MagneticBtn
+├── composables/     # useScrollAnimation, useMagnetic
+├── i18n/            # 中英文翻译文件
+├── router/          # 路由配置
+├── views/           # Home, About, Members, Join, NotFound
+├── App.vue
+└── main.js
+```
 
-本项目采用 Apache License 2.0 开源许可证发布。
+## 本地开发
 
-重要提示：
+```bash
+# 安装依赖
+npm install
 
-· 在使用本项目的代码时，请严格遵守 Apache License 2.0 的规定。
-· 请务必保留原始作者的版权信息和许可证声明。
-· 如果您修改了代码，需要在修改过的文件中说明。
-· 禁止使用本项目及其衍生作品进行任何违法活动。
-· 本项目按“原样”提供，作者不承担任何因使用本项目而产生的直接或间接责任。
+# 启动开发服务器
+npm run dev
 
-有关此许可证的完整条款和条件，请参阅 LICENSE 文件。
+# 构建生产版本
+npm run build
 
-🤝 参与贡献
+# 预览构建结果
+npm run preview
+```
 
-我们欢迎任何形式的贡献！如果您有兴趣为 SZY 创新工作室的网站添砖加瓦，请遵循以下步骤：
+## 部署
 
-1. Fork 本仓库
-2. 创建您的特性分支 (git checkout -b feature/AmazingFeature)
-3. 提交您的更改 (git commit -m 'Add some AmazingFeature')
-4. 推送到分支 (git push origin feature/AmazingFeature)
-5. 打开一个 Pull Request
+构建产物在 `dist/` 目录，部署到任意静态服务器即可。由于使用 Hash 路由模式，无需服务端配置回退规则。
 
-📞 联系我们
+## License
 
-如果您有任何问题或建议，请通过以下方式联系我们：
-
-· 邮箱: zhangzhaorui@szystudio.cn
-· 官网: https://www.szystudio.cn/
-* 本文档维护人：张钊睿
----
-
-请注意：尊重开源，合法使用。共同维护一个健康、积极的技术交流环境。
-本站点没有用edgeone cdn
+本项目使用 MIT 协议开源。

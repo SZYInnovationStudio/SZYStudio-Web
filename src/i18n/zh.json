@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "services": "我们的服务",
+    "projects": "我们的项目",
+    "members": "工作室成员",
+    "about": "工作室简介"
+  },
+  "home": {
+    "hero_title": "SZY创新工作室",
+    "hero_subtitle": "一个由小学生和初中生创建的科技工作室",
+    "hero_cta": "探索我们的服务",
+    "services_title": "我们的服务",
+    "projects_title": "我们的项目",
+    "members_title": "工作室成员",
+    "about_title": "工作室简介",
+    "about_text": "SZY创新工作室是由一群充满激情的小学生和初中生创建的非营利性科技工作室。我们致力于利用代码创造有趣且实用的项目，服务网络社区。",
+    "about_more": "查看详细介绍",
+    "members_more": "查看全部成员",
+    "join_us": "加入我们",
+    "apply_online": "在线申请"
+  },
+  "services": {
+    "image_hosting": "SZY图床",
+    "image_hosting_desc": "一家免费的图床，全球高速CDN加速，全球延迟平均21ms(需申请注册过白域名)",
+    "cloud_drive": "SZY云盘",
+    "cloud_drive_desc": "免费云盘，不限速，储存空间大，安全可靠(需申请注册)",
+    "cloud": "SZY云",
+    "cloud_desc": "低价云服务，方便快捷，性价比高",
+    "visit": "访问网站"
+  },
+  "projects": {
+    "website": "工作室网站",
+    "website_desc": "这是我们工作室的官方网站，采用Vue3 + TypeScript + Tailwind CSS开发，完全开源。",
+    "550wos": "550WOS",
+    "550wos_desc": "根据Windows12网页版改编的在线操作系统",
+    "uptimeflare": "UptimeFlare 汉化版",
+    "uptimeflare_desc": "在UptimeFlare基础上开发的汉化版本",
+    "mcserver": "MCServerBackupPanel",
+    "mcserver_desc": "开源免费强大的Minecraft服务器备份管理系统",
+    "view_source": "查看源码"
+  },
+  "members": {
+    "title": "工作室成员",
+    "back": "返回主页",
+    "filter_all": "全部成员",
+    "filter_founder": "创始人",
+    "filter_management": "管理团队",
+    "filter_developer": "开发团队",
+    "filter_designer": "设计团队",
+    "shizhongyan": {
+      "name": "ShiZhongyan🍭",
+      "role": "创始人",
+      "title": "工作室创始人 & 全栈开发 & CEO",
+      "desc": "热爱编程和技术创新，负责工作室整体规划和项目开发。"
+    },
+    "1424cc": {
+      "name": "1424cc",
+      "role": "发起人",
+      "title": "工作室发起人 & 后端开发",
+      "desc": "擅长服务器管理和后端开发，确保服务稳定运行。"
+    },
+    "wuzheyu": {
+      "name": "WuZheyu",
+      "role": "发起人",
+      "title": "工作室发起人 & 技术支持",
+      "desc": "擅长多种编程语言，为工作室提供技术支持"
+    },
+    "zhangzhaorui": {
+      "name": "ZHANGZHAORUI",
+      "role": "MCN负责人 & CTO",
+      "title": "MCN负责人 & 社区管理",
+      "desc": "负责社区运营和内容创作，活跃社区氛围。"
+    },
+    "fry": {
+      "name": "Fry酥条",
+      "role": "工作室管理",
+      "title": "工作室管理 & 系统运维 & COO",
+      "desc": "负责服务器维护和系统安全，保障服务稳定。"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "back": "返回主页",
+    "intro": "我们是 SZY 创新工作室。本工作室成立于 2024 年，由几名初中生与小学生共同创立，是一家非营利性科技工作室。我们专注于代码编写，致力于通过编程技术开发有趣且实用的项目，服务网络社区。同时，工作室积极投身公益事业，持续开展多项公益项目，以技术赋能社会。期待与各界志同道合者交流合作。"
+  },
+  "footer": {
+    "brand": "SZY创新工作室",
+    "tagline": "少年 · 技术 · 创新 · 开源",
+    "services": "我们的服务",
+    "contact": "联系我们",
+    "copyright": "© 2026 SZY创新工作室. 保留所有权利.",
+    "software_download": "软件下载平台",
+    "official_shop": "官方售货平台"
+  },
+  "side": {
+    "top": "返回顶端",
+    "status": "服务器状态",
+    "language": "切换语言"
+  },
+  "join": {
+    "title": "加入SZY创新工作室",
+    "desc": "我们是由初中生与小学生共同创立的非营利性科技工作室，专注于代码编写，致力于通过编程技术开发有趣且实用的项目。",
+    "apply_btn": "申请加入",
+    "form_title": "加入申请",
+    "form_subtitle": "请填写以下信息，我们会尽快与您联系",
+    "name": "姓名",
+    "gender": "性别",
+    "male": "男",
+    "female": "女",
+    "other": "其他",
+    "age": "年龄",
+    "languages": "会的编程语言 / 邮箱",
+    "languages_placeholder": "例如：Python, JavaScript, HTML/CSS...",
+    "project_url": "项目地址 (GitHub 或其他平台)",
+    "project_url_placeholder": "https://github.com/yourusername/yourproject",
+    "captcha": "验证码",
+    "captcha_placeholder": "请输入验证码",
+    "submit": "提交申请",
+    "submitting": "提交中...",
+    "back": "返回",
+    "success_title": "申请提交成功！",
+    "success_msg": "感谢您申请加入SZY创新工作室，我们会尽快审核并与您联系。",
+    "new_application": "提交新的申请",
+    "admin": "管理",
+    "admin_title": "申请管理",
+    "admin_subtitle": "查看和管理所有加入申请",
+    "total": "总申请数",
+    "today": "今日申请",
+    "table_name": "姓名",
+    "table_gender": "性别",
+    "table_age": "年龄",
+    "table_languages": "编程语言/邮箱",
+    "table_project": "项目地址",
+    "table_time": "提交时间",
+    "table_action": "操作",
+    "view": "查看",
+    "none": "无",
+    "no_data": "暂无申请数据",
+    "loading": "加载中...",
+    "load_failed": "加载失败，请重新登录",
+    "relogin": "重新登录",
+    "delete": "删除",
+    "delete_confirm": "确定要删除这条申请记录吗？此操作不可恢复。",
+    "delete_failed": "删除失败，请检查网络连接",
+    "login_title": "管理员登录",
+    "username": "用户名",
+    "password": "密码",
+    "login": "登录",
+    "logging_in": "登录中...",
+    "cancel": "取消",
+    "captcha_error": "验证码错误，请重新输入",
+    "login_failed": "登录失败，请检查网络连接",
+    "submit_failed": "提交失败，请检查网络连接",
+    "fill_required": "请填写所有必填字段",
+    "age_range": "年龄必须在10到30岁之间"
+  }
+}

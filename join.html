@@ -1,0 +1,1055 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="一个由小学生和初中生创建的科技工作室，致力于用代码改变互联网">
+    <meta property="og:url" content="https://www.szystudio.cn">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SZY创新工作室">
+    <meta property="og:description" content="一个由小学生和初中生创建的科技工作室，致力于用代码改变互联网">
+    <meta property="og:image" content="https://szycdn.szyd.fun/szystudio/favicon.png">
+    <meta property="og:image:width" content="128">
+    <meta property="og:image:height" content="128">
+    <title>加入SZY创新工作室</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        body {
+            background: url('https://szycdn.szyd.fun/shizhongyan/68c692c997e70.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .mac-window {
+            width: 100%;
+            max-width: 700px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .title-bar {
+            background: #f0f0f0;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+        }
+        
+        .window-controls {
+            display: flex;
+            gap: 8px;
+            margin-right: 16px;
+        }
+        
+        .control-btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .close {
+            background: #ff5f57;
+        }
+        
+        .minimize {
+            background: #ffbd2e;
+        }
+        
+        .maximize {
+            background: #28ca42;
+        }
+        
+        .window-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        .admin-btn {
+            position: absolute;
+            right: 16px;
+            background: #0071e3;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .admin-btn:hover {
+            background: #0056b3;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: #86868b;
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            background-color: #0071e3;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            box-shadow: 0 4px 14px 0 rgba(0, 113, 227, 0.3);
+        }
+        
+        .cta-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(0, 113, 227, 0.4);
+        }
+        
+        .form-container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 0;
+            display: none;
+        }
+        
+        .form-container.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .form-header h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #1d1d1f;
+        }
+        
+        .form-header p {
+            color: #86868b;
+        }
+        
+        .form-group {
+            margin-bottom: 24px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #1d1d1f;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #d2d2d7;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #0071e3;
+            box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.1);
+        }
+        
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .radio-option input {
+            width: auto;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #0071e3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .back-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            color: #0071e3;
+            border: 1px solid #d2d2d7;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+        
+        .back-btn:hover {
+            background-color: #f5f5f7;
+        }
+        
+        .success-message {
+            text-align: center;
+            padding: 40px;
+            display: none;
+        }
+        
+        .success-message.active {
+            display: block;
+        }
+        
+        .success-icon {
+            font-size: 64px;
+            color: #28ca42;
+            margin-bottom: 20px;
+        }
+        
+        .success-message h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+        
+        .success-message p {
+            color: #86868b;
+            margin-bottom: 30px;
+        }
+
+        .admin-panel {
+            display: none;
+        }
+
+        .admin-panel.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .admin-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .admin-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0071e3;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: #86868b;
+            font-size: 14px;
+        }
+
+        .applications-table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .applications-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        .applications-table th,
+        .applications-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .applications-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #1d1d1f;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .applications-table tbody tr {
+            transition: background-color 0.2s;
+        }
+
+        .applications-table tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .delete-btn {
+            background: #ff3b30;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .delete-btn:hover {
+            background: #d63029;
+        }
+
+        .login-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .login-modal.active {
+            display: flex;
+        }
+
+        .login-form {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .login-form h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #1d1d1f;
+        }
+
+        .error-message {
+            color: #ff3b30;
+            text-align: center;
+            margin-bottom: 16px;
+            font-size: 14px;
+            background: #fff0f0;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #86868b;
+            font-size: 16px;
+        }
+
+        .captcha-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .captcha-group input {
+            flex: 1;
+        }
+
+        .captcha-canvas {
+            border: 1px solid #d2d2d7;
+            border-radius: 8px;
+            cursor: pointer;
+            height: 44px;
+            width: 120px;
+        }
+
+        .project-link {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #86868b;
+            font-size: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+
+            .applications-table th,
+            .applications-table td {
+                padding: 12px 8px;
+                font-size: 13px;
+            }
+            
+            .login-form {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mac-window">
+        <div class="title-bar">
+            <div class="window-controls">
+                <div class="control-btn close"></div>
+                <div class="control-btn minimize"></div>
+                <div class="control-btn maximize"></div>
+            </div>
+            <div class="window-title">加入SZY创新工作室</div>
+            <button class="admin-btn" id="adminBtn">管理</button>
+        </div>
+        
+        <div class="content">
+            <div class="hero" id="welcomePage">
+                <h1>加入SZY创新工作室</h1>
+                <p>我们是由初中生与小学生共同创立的非营利性科技工作室，专注于代码编写，致力于通过编程技术开发有趣且实用的项目。</p>
+                <button class="cta-button" id="applyBtn">申请加入</button>
+            </div>
+            
+            <div class="form-container" id="applicationForm">
+                <div class="form-header">
+                    <h2>加入申请</h2>
+                    <p>请填写以下信息，我们会尽快与您联系</p>
+                </div>
+                
+                <form id="joinForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required maxlength="50">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>性别</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">男</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">女</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">其他</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">年龄</label>
+                        <input type="number" id="age" name="age" min="10" max="30" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="languages">会的编程语言/邮箱（分两行输入）</label>
+                        <textarea id="languages" name="languages" rows="3" placeholder="例如：Python, JavaScript, HTML/CSS..." required maxlength="500"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectUrl">项目地址 (GitHub或其他平台)</label>
+                        <input type="url" id="projectUrl" name="projectUrl" placeholder="https://github.com/yourusername/yourproject" maxlength="255">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applyCaptchaInput">验证码</label>
+                        <div class="captcha-group">
+                            <input type="text" id="applyCaptchaInput" name="apply_captcha" placeholder="请输入验证码" required maxlength="4" autocomplete="off">
+                            <canvas id="applyCaptchaCanvas" class="captcha-canvas" width="120" height="44"></canvas>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">提交申请</button>
+                    <button type="button" class="back-btn" id="backBtn">返回</button>
+                </form>
+            </div>
+            
+            <div class="success-message" id="successPage">
+                <div class="success-icon">✓</div>
+                <h2>申请提交成功！</h2>
+                <p>感谢您申请加入SZY创新工作室，我们会尽快审核并与您联系。</p>
+                <button class="cta-button" id="newApplicationBtn">提交新的申请</button>
+            </div>
+
+            <div class="admin-panel" id="adminPanel">
+                <div class="admin-header">
+                    <h2>申请管理</h2>
+                    <p>查看和管理所有加入申请</p>
+                </div>
+
+                <div class="admin-stats" id="adminStats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalApplications">0</div>
+                        <div class="stat-label">总申请数</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="todayApplications">0</div>
+                        <div class="stat-label">今日申请</div>
+                    </div>
+                </div>
+
+                <div id="applicationsContainer">
+                    <div class="loading" id="applicationsLoading">加载中...</div>
+                    <div class="applications-table-container" id="applicationsTableContainer" style="display: none;">
+                        <table class="applications-table" id="applicationsTable">
+                            <thead>
+                                <tr>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>年龄</th>
+                                    <th>编程语言/邮箱</th>
+                                    <th>项目地址</th>
+                                    <th>提交时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="applicationsBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <button class="back-btn" id="backToMainBtn" style="margin-top: 30px;">返回主页面</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-modal" id="loginModal">
+        <div class="login-form">
+            <h3>管理员登录</h3>
+            <div class="error-message" id="loginError" style="display: none;"></div>
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminUsername">用户名</label>
+                    <input type="text" id="adminUsername" name="username" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="adminPassword">密码</label>
+                    <input type="password" id="adminPassword" name="password" required autocomplete="current-password">
+                </div>
+                <div class="form-group">
+                    <label for="captchaInput">验证码</label>
+                    <div class="captcha-group">
+                        <input type="text" id="captchaInput" name="captcha" placeholder="请输入验证码" required maxlength="4" autocomplete="off">
+                        <canvas id="captchaCanvas" class="captcha-canvas" width="120" height="44"></canvas>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">登录</button>
+                <button type="button" class="back-btn" id="cancelLoginBtn">取消</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE_URL = 'https://api.szystudio.cn/join/main.php';
+        
+        const welcomePage = document.getElementById('welcomePage');
+        const applicationForm = document.getElementById('applicationForm');
+        const successPage = document.getElementById('successPage');
+        const adminPanel = document.getElementById('adminPanel');
+        const applyBtn = document.getElementById('applyBtn');
+        const backBtn = document.getElementById('backBtn');
+        const newApplicationBtn = document.getElementById('newApplicationBtn');
+        const joinForm = document.getElementById('joinForm');
+        const adminBtn = document.getElementById('adminBtn');
+        const backToMainBtn = document.getElementById('backToMainBtn');
+        const loginModal = document.getElementById('loginModal');
+        const adminLoginForm = document.getElementById('adminLoginForm');
+        const cancelLoginBtn = document.getElementById('cancelLoginBtn');
+        const loginError = document.getElementById('loginError');
+        
+        const loginCaptchaCanvas = document.getElementById('captchaCanvas');
+        const loginCaptchaInput = document.getElementById('captchaInput');
+        const applyCaptchaCanvas = document.getElementById('applyCaptchaCanvas');
+        const applyCaptchaInput = document.getElementById('applyCaptchaInput');
+
+        let loginCaptchaCode = '';
+        let applyCaptchaCode = '';
+        
+        function generateCaptchaCode() {
+            const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+            let code = '';
+            for (let i = 0; i < 4; i++) {
+                code += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return code;
+        }
+        
+        function drawCaptcha(canvas, code) {
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#f8f9fa';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            for (let i = 0; i < 4; i++) {
+                ctx.strokeStyle = `rgba(${Math.random()*150},${Math.random()*150},${Math.random()*150},0.3)`;
+                ctx.beginPath();
+                ctx.moveTo(Math.random()*120, Math.random()*44);
+                ctx.lineTo(Math.random()*120, Math.random()*44);
+                ctx.stroke();
+            }
+            
+            for (let i = 0; i < 30; i++) {
+                ctx.fillStyle = `rgba(${Math.random()*200},${Math.random()*200},${Math.random()*200},0.4)`;
+                ctx.beginPath();
+                ctx.arc(Math.random()*120, Math.random()*44, 1, 0, Math.PI*2);
+                ctx.fill();
+            }
+            
+            ctx.font = 'bold 24px Arial';
+            ctx.fillStyle = '#333';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            for (let i = 0; i < code.length; i++) {
+                const x = 20 + i * 25 + Math.random() * 5;
+                const y = 22 + Math.random() * 8;
+                const angle = (Math.random() - 0.5) * 0.3;
+                ctx.save();
+                ctx.translate(x, y);
+                ctx.rotate(angle);
+                ctx.fillStyle = `rgb(${Math.random()*100},${Math.random()*100},${Math.random()*200})`;
+                ctx.fillText(code.charAt(i), 0, 0);
+                ctx.restore();
+            }
+        }
+
+        function refreshLoginCaptcha() {
+            loginCaptchaCode = generateCaptchaCode();
+            drawCaptcha(loginCaptchaCanvas, loginCaptchaCode);
+            if (loginCaptchaInput) loginCaptchaInput.value = '';
+        }
+
+        function refreshApplyCaptcha() {
+            applyCaptchaCode = generateCaptchaCode();
+            drawCaptcha(applyCaptchaCanvas, applyCaptchaCode);
+            if (applyCaptchaInput) applyCaptchaInput.value = '';
+        }
+        
+        refreshLoginCaptcha();
+        refreshApplyCaptcha();
+        
+        loginCaptchaCanvas.addEventListener('click', refreshLoginCaptcha);
+        applyCaptchaCanvas.addEventListener('click', refreshApplyCaptcha);
+    
+        applyBtn.addEventListener('click', function() {
+            welcomePage.style.display = 'none';
+            applicationForm.classList.add('active');
+            refreshApplyCaptcha(); 
+        });
+        
+        backBtn.addEventListener('click', function() {
+            applicationForm.classList.remove('active');
+            adminPanel.classList.remove('active');
+            welcomePage.style.display = 'block';
+        });
+    
+        backToMainBtn.addEventListener('click', function() {
+            adminPanel.classList.remove('active');
+            welcomePage.style.display = 'block';
+        });
+        
+        newApplicationBtn.addEventListener('click', function() {
+            successPage.classList.remove('active');
+            welcomePage.style.display = 'block';
+            joinForm.reset();
+            refreshApplyCaptcha();
+        });
+        
+        joinForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const userCaptcha = applyCaptchaInput.value.trim().toUpperCase();
+            if (userCaptcha !== applyCaptchaCode) {
+                alert('验证码错误，请重新输入');
+                refreshApplyCaptcha();
+                return;
+            }
+
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name').trim(),
+                gender: formData.get('gender'),
+                age: parseInt(formData.get('age')),
+                languages: formData.get('languages').trim(),
+                projectUrl: formData.get('projectUrl').trim()
+            };
+            
+            if (!data.name || !data.gender || !data.languages) {
+                alert('请填写所有必填字段');
+                return;
+            }
+            
+            if (data.age < 10 || data.age > 30) {
+                alert('年龄必须在10到30岁之间');
+                return;
+            }
+            
+            try {
+                const submitBtn = joinForm.querySelector('.submit-btn');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = '提交中...';
+                submitBtn.disabled = true;
+                
+                const response = await fetch(API_BASE_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'include', 
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    applicationForm.classList.remove('active');
+                    successPage.classList.add('active');
+                } else {
+                    alert('提交失败：' + (result.message || '未知错误'));
+                    refreshApplyCaptcha();
+                }
+            } catch (error) {
+                console.error('提交错误:', error);
+                alert('提交失败，请检查网络连接');
+                refreshApplyCaptcha();
+            } finally {
+                const submitBtn = joinForm.querySelector('.submit-btn');
+                submitBtn.textContent = '提交申请';
+                submitBtn.disabled = false;
+            }
+        });
+        
+        adminBtn.addEventListener('click', function() {
+            loginModal.classList.add('active');
+            refreshLoginCaptcha();
+            loginError.style.display = 'none';
+            adminLoginForm.reset();
+        });
+    
+        cancelLoginBtn.addEventListener('click', function() {
+            loginModal.classList.remove('active');
+            loginError.style.display = 'none';
+            adminLoginForm.reset();
+        });
+    
+        adminLoginForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const credentials = {
+                action: 'admin_login',
+                username: formData.get('username'),
+                password: formData.get('password'),
+                captcha: formData.get('captcha')
+            };
+    
+            if (credentials.captcha.toUpperCase() !== loginCaptchaCode) {
+                loginError.textContent = '验证码错误，请重新输入';
+                loginError.style.display = 'block';
+                refreshLoginCaptcha();
+                return;
+            }
+    
+            try {
+                const submitBtn = adminLoginForm.querySelector('.submit-btn');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = '登录中...';
+                submitBtn.disabled = true;
+    
+                const response = await fetch(API_BASE_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'include', 
+                    body: JSON.stringify(credentials)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    loginModal.classList.remove('active');
+                    welcomePage.style.display = 'none';
+                    applicationForm.classList.remove('active');
+                    successPage.classList.remove('active');
+                    adminPanel.classList.add('active');
+                    adminLoginForm.reset();
+                    
+                    await loadApplications();
+                } else {
+                    loginError.textContent = result.message || '用户名或密码错误';
+                    loginError.style.display = 'block';
+                    refreshLoginCaptcha();
+                }
+            } catch (error) {
+                console.error('登录错误:', error);
+                loginError.textContent = '登录失败，请检查网络连接';
+                loginError.style.display = 'block';
+            } finally {
+                const submitBtn = adminLoginForm.querySelector('.submit-btn');
+                submitBtn.textContent = '登录';
+                submitBtn.disabled = false;
+            }
+        });
+    
+        async function loadApplications() {
+            const loadingElement = document.getElementById('applicationsLoading');
+            const tableContainer = document.getElementById('applicationsTableContainer');
+            
+            try {
+                loadingElement.style.display = 'block';
+                tableContainer.style.display = 'none';
+    
+                const response = await fetch(API_BASE_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'include', 
+                    body: JSON.stringify({
+                        action: 'get_applications'
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    displayApplications(result.data);
+                    updateStats(result.data);
+                } else {
+                    throw new Error(result.message || '获取数据失败');
+                }
+                
+            } catch (error) {
+                console.error('加载数据失败:', error);
+                loadingElement.innerHTML = '加载失败: ' + error.message + '，请重新登录';
+                const retryBtn = document.createElement('button');
+                retryBtn.textContent = '重新登录';
+                retryBtn.className = 'cta-button';
+                retryBtn.style.marginTop = '10px';
+                retryBtn.onclick = function() {
+                    loginModal.classList.add('active');
+                    refreshLoginCaptcha();
+                };
+                loadingElement.appendChild(retryBtn);
+            }
+        }
+    
+        function displayApplications(applications) {
+            const tbody = document.getElementById('applicationsBody');
+            const loadingElement = document.getElementById('applicationsLoading');
+            const tableContainer = document.getElementById('applicationsTableContainer');
+            
+            if (!applications || applications.length === 0) {
+                loadingElement.innerHTML = '<div class="no-data">暂无申请数据</div>';
+                tableContainer.style.display = 'none';
+                return;
+            }
+            
+            tbody.innerHTML = applications.map(app => `
+                <tr data-id="${app.id}">
+                    <td>${escapeHtml(app.name)}</td>
+                    <td>${getGenderText(app.gender)}</td>
+                    <td>${app.age}</td>
+                    <td>${escapeHtml(app.languages)}</td>
+                    <td>${app.project_url ? `<a href="${escapeHtml(app.project_url)}" target="_blank" rel="noopener noreferrer" class="project-link">查看</a>` : '无'}</td>
+                    <td>${new Date(app.submit_time).toLocaleString()}</td>
+                    <td><button class="delete-btn" onclick="deleteApplication(${app.id})">删除</button></td>
+                </tr>
+            `).join('');
+            
+            loadingElement.style.display = 'none';
+            tableContainer.style.display = 'block';
+        }
+
+        async function deleteApplication(id) {
+            if (!confirm('确定要删除这条申请记录吗？此操作不可恢复。')) {
+                return;
+            }
+            
+            try {
+                const response = await fetch(API_BASE_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'include',
+                    body: JSON.stringify({
+                        action: 'delete_application',
+                        id: id
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    const row = document.querySelector(`tr[data-id="${id}"]`);
+                    if (row) {
+                        row.remove();
+                    }
+                    const totalEl = document.getElementById('totalApplications');
+                    totalEl.textContent = Math.max(0, parseInt(totalEl.textContent) - 1);
+                    
+                    if (document.querySelectorAll('#applicationsBody tr').length === 0) {
+                        document.getElementById('applicationsTableContainer').style.display = 'none';
+                        document.getElementById('applicationsLoading').innerHTML = '<div class="no-data">暂无申请数据</div>';
+                        document.getElementById('applicationsLoading').style.display = 'block';
+                    }
+                } else {
+                    alert('删除失败：' + (result.message || '未知错误'));
+                }
+            } catch (error) {
+                console.error('删除失败:', error);
+                alert('删除失败，请检查网络连接');
+            }
+        }
+    
+        function updateStats(applications) {
+            if (!applications) {
+                document.getElementById('totalApplications').textContent = '0';
+                document.getElementById('todayApplications').textContent = '0';
+                return;
+            }
+            
+            const total = applications.length;
+            const today = applications.filter(app => {
+                const appDate = new Date(app.submit_time).toDateString();
+                const todayDate = new Date().toDateString();
+                return appDate === todayDate;
+            }).length;
+            
+            document.getElementById('totalApplications').textContent = total;
+            document.getElementById('todayApplications').textContent = today;
+        }
+    
+        function getGenderText(gender) {
+            const genders = {
+                'male': '男',
+                'female': '女',
+                'other': '其他'
+            };
+            return genders[gender] || gender;
+        }
+    
+        function escapeHtml(unsafe) {
+            if (!unsafe) return '';
+            return unsafe
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+    </script>
+</body>
+</html>

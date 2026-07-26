@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "services": "Our Services",
+    "projects": "Our Projects",
+    "members": "Studio Members",
+    "about": "About the Studio"
+  },
+  "home": {
+    "hero_title": "SZY Innovation Studio",
+    "hero_subtitle": "A tech studio founded by elementary and middle school students",
+    "hero_cta": "Explore Our Services",
+    "services_title": "Our Services",
+    "projects_title": "Our Projects",
+    "members_title": "Studio Members",
+    "about_title": "About the Studio",
+    "about_text": "SZY Innovation Studio is a non-profit technology studio founded by a group of passionate elementary and middle school students. We are dedicated to creating fun and practical projects through coding, serving the online community.",
+    "about_more": "Learn More",
+    "members_more": "View All Members",
+    "join_us": "Join Us",
+    "apply_online": "Apply Online"
+  },
+  "services": {
+    "image_hosting": "SZY Image Hosting",
+    "image_hosting_desc": "Free image hosting with global high-speed CDN, average 21ms latency (domain whitelist registration required)",
+    "cloud_drive": "SZY Cloud Drive",
+    "cloud_drive_desc": "Free cloud storage, unlimited speed, large capacity, secure and reliable (registration required)",
+    "cloud": "SZY Cloud",
+    "cloud_desc": "Affordable cloud services, convenient, and cost-effective",
+    "visit": "Visit Site"
+  },
+  "projects": {
+    "website": "Studio Website",
+    "website_desc": "The official website of our studio, built with modern web technologies and fully open source.",
+    "550wos": "550WOS",
+    "550wos_desc": "An online operating system adapted from Windows 12 Web Edition",
+    "uptimeflare": "UptimeFlare CN",
+    "uptimeflare_desc": "A Chinese-localized version based on UptimeFlare",
+    "mcserver": "MCServerBackupPanel",
+    "mcserver_desc": "Open source, free and powerful Minecraft server backup management system",
+    "view_source": "View Source"
+  },
+  "members": {
+    "title": "Studio Members",
+    "back": "Back to Home",
+    "filter_all": "All Members",
+    "filter_founder": "Founders",
+    "filter_management": "Management",
+    "filter_developer": "Developers",
+    "filter_designer": "Designers",
+    "shizhongyan": {
+      "name": "ShiZhongyan🍭",
+      "role": "Founder",
+      "title": "Founder & Full-stack Dev & CEO",
+      "desc": "Passionate about programming and tech innovation. Responsible for overall studio planning and project development."
+    },
+    "1424cc": {
+      "name": "1424cc",
+      "role": "Co-founder",
+      "title": "Co-founder & Backend Developer",
+      "desc": "Skilled in server management and backend development, ensuring stable service operation."
+    },
+    "wuzheyu": {
+      "name": "WuZheyu",
+      "role": "Co-founder",
+      "title": "Co-founder & Technical Support",
+      "desc": "Proficient in multiple programming languages, providing technical support for the studio."
+    },
+    "zhangzhaorui": {
+      "name": "ZHANGZHAORUI",
+      "role": "MCN Lead & CTO",
+      "title": "MCN Lead & Community Manager",
+      "desc": "Responsible for community operations and content creation, keeping the community active."
+    },
+    "fry": {
+      "name": "Fry酥条",
+      "role": "Studio Manager",
+      "title": "Studio Manager & DevOps & COO",
+      "desc": "Responsible for server maintenance and system security, ensuring service stability."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "back": "Back to Home",
+    "intro": "We are SZY Innovation Studio. Founded in 2024 by several middle and elementary school students, we are a non-profit technology studio. We focus on coding and are dedicated to developing fun and practical projects through programming to serve the online community. Meanwhile, the studio actively engages in public welfare, continuously carrying out various charitable projects to empower society through technology. We look forward to exchanging ideas and collaborating with like-minded individuals from all walks of life."
+  },
+  "footer": {
+    "brand": "SZY Innovation Studio",
+    "tagline": "Youth · Tech · Innovation · Open Source",
+    "services": "Our Services",
+    "contact": "Contact Us",
+    "copyright": "© 2026 SZY Innovation Studio. All Rights Reserved.",
+    "software_download": "Software Downloads",
+    "official_shop": "Official Shop"
+  },
+  "side": {
+    "top": "Back to Top",
+    "status": "Server Status",
+    "language": "Switch Language"
+  },
+  "join": {
+    "title": "Join SZY Innovation Studio",
+    "desc": "We are a non-profit tech studio co-founded by middle and elementary school students, focused on coding and building fun, practical projects through programming.",
+    "apply_btn": "Apply to Join",
+    "form_title": "Join Application",
+    "form_subtitle": "Please fill in the information below, we will contact you soon",
+    "name": "Name",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "age": "Age",
+    "languages": "Programming Languages / Email",
+    "languages_placeholder": "e.g. Python, JavaScript, HTML/CSS...",
+    "project_url": "Project URL (GitHub or others)",
+    "project_url_placeholder": "https://github.com/yourusername/yourproject",
+    "captcha": "Captcha",
+    "captcha_placeholder": "Enter captcha",
+    "submit": "Submit Application",
+    "submitting": "Submitting...",
+    "back": "Back",
+    "success_title": "Application Submitted!",
+    "success_msg": "Thank you for applying to join SZY Innovation Studio. We will review and contact you soon.",
+    "new_application": "Submit Another",
+    "admin": "Admin",
+    "admin_title": "Application Management",
+    "admin_subtitle": "View and manage all join applications",
+    "total": "Total",
+    "today": "Today",
+    "table_name": "Name",
+    "table_gender": "Gender",
+    "table_age": "Age",
+    "table_languages": "Languages/Email",
+    "table_project": "Project",
+    "table_time": "Submitted",
+    "table_action": "Action",
+    "view": "View",
+    "none": "None",
+    "no_data": "No applications yet",
+    "loading": "Loading...",
+    "load_failed": "Load failed, please re-login",
+    "relogin": "Re-login",
+    "delete": "Delete",
+    "delete_confirm": "Are you sure you want to delete this application? This cannot be undone.",
+    "delete_failed": "Delete failed, please check your connection",
+    "login_title": "Admin Login",
+    "username": "Username",
+    "password": "Password",
+    "login": "Login",
+    "logging_in": "Logging in...",
+    "cancel": "Cancel",
+    "captcha_error": "Incorrect captcha, please try again",
+    "login_failed": "Login failed, please check your connection",
+    "submit_failed": "Submission failed, please check your connection",
+    "fill_required": "Please fill in all required fields",
+    "age_range": "Age must be between 10 and 30"
+  }
+}
