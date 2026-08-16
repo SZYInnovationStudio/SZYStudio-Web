@@ -33,8 +33,8 @@
     "website_desc": "这是我们工作室的官方网站，采用Vue3 + TypeScript + Tailwind CSS开发，完全开源。",
     "550wos": "550WOS",
     "550wos_desc": "根据Windows12网页版改编的在线操作系统",
-    "uptimeflare": "UptimeFlare 汉化版",
-    "uptimeflare_desc": "在UptimeFlare基础上开发的汉化版本",
+    "szytools": "SZY工具集",
+    "szytools_desc": "开源、强大的前端多功能工具集",
     "mcserver": "MCServerBackupPanel",
     "mcserver_desc": "开源免费强大的Minecraft服务器备份管理系统",
     "view_source": "查看源码"

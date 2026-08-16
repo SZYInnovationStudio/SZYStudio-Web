@@ -111,9 +111,9 @@ function scrollToServices() {
           <a href="https://github.com/SZYInnovationStudio/550WOS" target="_blank" rel="noopener" class="text-sm text-accent hover:text-accent-dark">GitHub →</a>
         </GlassCard>
         <GlassCard class="fade-in-up" padding="p-5">
-          <h3 class="font-bold text-neutral-800 mb-2">{{ t('projects.uptimeflare') }}</h3>
-          <p class="text-sm text-neutral-600 mb-3">{{ t('projects.uptimeflare_desc') }}</p>
-          <a href="https://github.com/SZYInnovationStudio/SZYSTUDIOUPTIMEFLARE" target="_blank" rel="noopener" class="text-sm text-accent hover:text-accent-dark">GitHub →</a>
+          <h3 class="font-bold text-neutral-800 mb-2">{{ t('projects.szytools') }}</h3>
+          <p class="text-sm text-neutral-600 mb-3">{{ t('projects.szytools_desc') }}</p>
+          <a href="https://github.com/SZYInnovationStudio/SZYTools" target="_blank" rel="noopener" class="text-sm text-accent hover:text-accent-dark">GitHub →</a>
         </GlassCard>
         <GlassCard class="fade-in-up" padding="p-5">
           <h3 class="font-bold text-neutral-800 mb-2">{{ t('projects.mcserver') }}</h3>
