@@ -1,10 +1,14 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
+
 defineProps({
   title: {
     type: String,
     default: 'szy@studio ~'
   }
 })
+
+const { locale } = useI18n()
 </script>
 
 <template>
@@ -27,7 +31,7 @@ defineProps({
         <span class="text-accent-light">$</span> cat /etc/motto
       </p>
       <p class="animate-type-line-4 opacity-0" style="animation-delay: 2.1s">
-        <span class="text-yellow-300">少年 · 技术 · 创新 · 开源</span>
+        <span class="text-yellow-300">{{ locale === 'zh' ? '少年 · 技术 · 创新 · 开源' : 'Youth · Tech · Innovation · Open Source' }}</span>
       </p>
       <p class="animate-type-line-5 opacity-0" style="animation-delay: 2.7s">
         <span class="text-accent-light">$</span> <span class="text-green-400">uv run studio</span>
