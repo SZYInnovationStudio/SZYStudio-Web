@@ -56,8 +56,14 @@
     "1424cc": {
       "name": "1424cc",
       "role": "发起人",
-      "title": "工作室发起人 & 后端开发",
+      "title": "工作室发起人",
       "desc": "擅长服务器管理和后端开发，确保服务稳定运行。"
+    },
+    "limingze": {
+      "name": "Limingze",
+      "role": "发起人",
+      "title": "工作室发起人",
+      "desc": "工作室主要发起人之一，负责运营和销售"
     },
     "wuzheyu": {
       "name": "WuZheyu",
@@ -68,7 +74,7 @@
     "zhangzhaorui": {
       "name": "ZHANGZHAORUI",
       "role": "MCN负责人 & CTO",
-      "title": "MCN负责人 & 社区管理",
+      "title": "MCN负责人 & CTO",
       "desc": "负责社区运营和内容创作，活跃社区氛围。"
     },
     "fry": {

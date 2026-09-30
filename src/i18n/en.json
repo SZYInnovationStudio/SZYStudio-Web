@@ -59,6 +59,12 @@
       "title": "Co-founder & Backend Developer",
       "desc": "Skilled in server management and backend development, ensuring stable service operation."
     },
+    "limingze": {
+      "name": "Limingze",
+      "role": "Co-founder",
+      "title": "Co-founder",
+      "desc": "Responsible for community operations and sales, keeping the community active."
+    },
     "wuzheyu": {
       "name": "WuZheyu",
       "role": "Co-founder",
@@ -68,7 +74,7 @@
     "zhangzhaorui": {
       "name": "ZHANGZHAORUI",
       "role": "MCN Lead & CTO",
-      "title": "MCN Lead & Community Manager",
+      "title": "MCN Lead & CTO",
       "desc": "Responsible for community operations and content creation, keeping the community active."
     },
     "fry": {
