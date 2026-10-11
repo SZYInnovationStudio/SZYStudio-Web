@@ -83,6 +83,16 @@ watch(() => props.open, (val) => {
             {{ t('nav.services') }}
           </button>
           <router-link
+            :to="localeLink('projects')"
+            class="flex items-center gap-3 px-4 py-3 rounded-xl text-lg font-medium text-neutral-700 hover:bg-accent-soft transition-colors"
+            @click="close"
+          >
+            <svg class="w-5 h-5 text-accent shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            {{ t('nav.projects') }}
+          </router-link>
+          <router-link
             :to="localeLink('about')"
             class="flex items-center gap-3 px-4 py-3 rounded-xl text-lg font-medium text-neutral-700 hover:bg-accent-soft transition-colors"
             @click="close"

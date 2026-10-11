@@ -16,6 +16,7 @@
     "about_text": "SZY Innovation Studio is a non-profit technology studio founded by a group of passionate elementary and middle school students. We are dedicated to creating fun and practical projects through coding, serving the online community.",
     "about_more": "Learn More",
     "members_more": "View All Members",
+    "projects_more": "View All Projects",
     "join_us": "Join Us",
     "apply_online": "Apply Online"
   },
@@ -29,15 +30,14 @@
     "visit": "Visit Site"
   },
   "projects": {
-    "website": "Studio Website",
-    "website_desc": "The official website of our studio, built with modern web technologies and fully open source.",
-    "550wos": "550WOS",
-    "550wos_desc": "An online operating system adapted from Windows 12 Web Edition",
     "szytools": "SZY Toolkit",
     "szytools_desc": "Open-source, powerful all-in-one frontend utility toolkit",
     "mcserver": "MCServerBackupPanel",
     "mcserver_desc": "Open source, free and powerful Minecraft server backup management system",
-    "view_source": "View Source"
+    "courseshop": "CourseShop",
+    "courseshop_desc": "A beautiful, powerful online course storefront system that is ready to deploy out of the box",
+    "portbridge": "PortBridge",
+    "portbridge_desc": "An out-of-the-box frp-like tunneling tool written in Go"
   },
   "members": {
     "title": "Studio Members",
@@ -87,7 +87,12 @@
   "about": {
     "title": "About Us",
     "back": "Back to Home",
-    "intro": "We are SZY Innovation Studio. Founded in 2024 by several middle and elementary school students, we are a non-profit technology studio. We focus on coding and are dedicated to developing fun and practical projects through programming to serve the online community. Meanwhile, the studio actively engages in public welfare, continuously carrying out various charitable projects to empower society through technology. We look forward to exchanging ideas and collaborating with like-minded individuals from all walks of life."
+    "intro": "We are SZY Innovation Studio. Founded in 2024 by several middle and elementary school students, we are a non-profit technology studio. We focus on coding and are dedicated to developing fun and practical projects through programming to serve the online community. Meanwhile, the studio actively engages in public welfare, continuously carrying out various charitable projects to empower society through technology. We look forward to exchanging ideas and collaborating with like-minded individuals from all walks of life.",
+    "journey_more": "View Full Journey",
+    "journey_less": "Collapse Journey",
+    "image_prev": "Previous",
+    "image_next": "Next",
+    "image_close": "Close"
   },
   "footer": {
     "brand": "SZY Innovation Studio",

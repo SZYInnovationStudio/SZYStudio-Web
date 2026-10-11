@@ -82,6 +82,15 @@ function goServices() {
             {{ t('nav.services') }}
           </button>
           <router-link
+            :to="localeLink('projects')"
+            class="px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200"
+            :class="isActive('/projects')
+              ? 'bg-accent-soft text-accent'
+              : 'text-neutral-600 hover:text-accent hover:bg-accent-soft/50'"
+          >
+            {{ t('nav.projects') }}
+          </router-link>
+          <router-link
             :to="localeLink('members')"
             class="px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200"
             :class="isActive('/members')

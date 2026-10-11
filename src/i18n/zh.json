@@ -16,6 +16,7 @@
     "about_text": "SZY创新工作室是由一群充满激情的小学生和初中生创建的非营利性科技工作室。我们致力于利用代码创造有趣且实用的项目，服务网络社区。",
     "about_more": "查看详细介绍",
     "members_more": "查看全部成员",
+    "projects_more": "查看全部项目",
     "join_us": "加入我们",
     "apply_online": "在线申请"
   },
@@ -29,15 +30,14 @@
     "visit": "访问网站"
   },
   "projects": {
-    "website": "工作室网站",
-    "website_desc": "这是我们工作室的官方网站，采用Vue3 + TypeScript + Tailwind CSS开发，完全开源。",
-    "550wos": "550WOS",
-    "550wos_desc": "根据Windows12网页版改编的在线操作系统",
     "szytools": "SZY工具集",
     "szytools_desc": "开源、强大的前端多功能工具集",
     "mcserver": "MCServerBackupPanel",
     "mcserver_desc": "开源免费强大的Minecraft服务器备份管理系统",
-    "view_source": "查看源码"
+    "courseshop": "CourseShop",
+    "courseshop_desc": "一个美观、强大、可直接部署运行的在线课程售卖系统",
+    "portbridge": "PortBridge",
+    "portbridge_desc": "一个由 Go 语言编写的，开箱即用的类 frp 工具"
   },
   "members": {
     "title": "工作室成员",
@@ -87,7 +87,12 @@
   "about": {
     "title": "关于我们",
     "back": "返回主页",
-    "intro": "我们是 SZY 创新工作室。本工作室成立于 2024 年，由几名初中生与小学生共同创立，是一家非营利性科技工作室。我们专注于代码编写，致力于通过编程技术开发有趣且实用的项目，服务网络社区。同时，工作室积极投身公益事业，持续开展多项公益项目，以技术赋能社会。期待与各界志同道合者交流合作。"
+    "intro": "我们是 SZY 创新工作室。本工作室成立于 2024 年，由几名初中生与小学生共同创立，是一家非营利性科技工作室。我们专注于代码编写，致力于通过编程技术开发有趣且实用的项目，服务网络社区。同时，工作室积极投身公益事业，持续开展多项公益项目，以技术赋能社会。期待与各界志同道合者交流合作。",
+    "journey_more": "查看全部发展历程",
+    "journey_less": "收起发展历程",
+    "image_prev": "上一张",
+    "image_next": "下一张",
+    "image_close": "关闭"
   },
   "footer": {
     "brand": "SZY创新工作室",

@@ -20,6 +20,11 @@ const routes = [
         component: () => import('@/views/MembersView.vue')
       },
       {
+        path: 'projects',
+        name: 'projects',
+        component: () => import('@/views/ProjectsView.vue')
+      },
+      {
         path: 'join',
         name: 'join',
         component: () => import('@/views/JoinView.vue')

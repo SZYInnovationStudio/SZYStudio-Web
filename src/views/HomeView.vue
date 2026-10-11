@@ -20,6 +20,7 @@ onMounted(() => {
 
 function toAbout() { router.push(locale.value === 'zh' ? '/about' : '/en/about') }
 function toMembers() { router.push(locale.value === 'zh' ? '/members' : '/en/members') }
+function toProjects() { router.push(locale.value === 'zh' ? '/projects' : '/en/projects') }
 function scrollToServices() {
   document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
 }
@@ -101,16 +102,6 @@ function scrollToServices() {
       <h2 class="section-heading">{{ t('home.projects_title') }}</h2>
       <BentoGrid :cols="2" gap="gap-4 md:gap-5">
         <GlassCard class="fade-in-up" padding="p-5">
-          <h3 class="font-bold text-neutral-800 mb-2">{{ t('projects.website') }}</h3>
-          <p class="text-sm text-neutral-600 mb-3">{{ t('projects.website_desc') }}</p>
-          <a :href="locale==='zh' ? 'https://github.com/SZYInnovationStudio/szystudio-web' : 'https://github.com/SZYInnovationStudio/szystudio-web'" target="_blank" rel="noopener" class="text-sm text-accent hover:text-accent-dark">GitHub →</a>
-        </GlassCard>
-        <GlassCard class="fade-in-up" padding="p-5">
-          <h3 class="font-bold text-neutral-800 mb-2">{{ t('projects.550wos') }}</h3>
-          <p class="text-sm text-neutral-600 mb-3">{{ t('projects.550wos_desc') }}</p>
-          <a href="https://github.com/SZYInnovationStudio/550WOS" target="_blank" rel="noopener" class="text-sm text-accent hover:text-accent-dark">GitHub →</a>
-        </GlassCard>
-        <GlassCard class="fade-in-up" padding="p-5">
           <h3 class="font-bold text-neutral-800 mb-2">{{ t('projects.szytools') }}</h3>
           <p class="text-sm text-neutral-600 mb-3">{{ t('projects.szytools_desc') }}</p>
           <a href="https://github.com/SZYInnovationStudio/SZYTools" target="_blank" rel="noopener" class="text-sm text-accent hover:text-accent-dark">GitHub →</a>
@@ -120,7 +111,23 @@ function scrollToServices() {
           <p class="text-sm text-neutral-600 mb-3">{{ t('projects.mcserver_desc') }}</p>
           <a href="https://github.com/szyinnovationstudio/MCServerBackupPanel" target="_blank" rel="noopener" class="text-sm text-accent hover:text-accent-dark">GitHub →</a>
         </GlassCard>
+        <GlassCard class="fade-in-up" padding="p-5">
+          <h3 class="font-bold text-neutral-800 mb-2">{{ t('projects.courseshop') }}</h3>
+          <p class="text-sm text-neutral-600 mb-3">{{ t('projects.courseshop_desc') }}</p>
+          <a href="https://github.com/szyinnovationstudio/CourseShop" target="_blank" rel="noopener" class="text-sm text-accent hover:text-accent-dark">GitHub →</a>
+        </GlassCard>
+        <GlassCard class="fade-in-up" padding="p-5">
+          <h3 class="font-bold text-neutral-800 mb-2">{{ t('projects.portbridge') }}</h3>
+          <p class="text-sm text-neutral-600 mb-3">{{ t('projects.portbridge_desc') }}</p>
+          <a href="https://github.com/szyinnovationstudio/PortBridge" target="_blank" rel="noopener" class="text-sm text-accent hover:text-accent-dark">GitHub →</a>
+        </GlassCard>
       </BentoGrid>
+      <div class="text-center mt-8">
+        <FluidButton variant="outline" @click="toProjects">
+          {{ t('home.projects_more') }}
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </FluidButton>
+      </div>
     </section>
 
     <section class="mb-16 md:mb-20">
